@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(images/bg-header-desktop.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Css */
+
+header {
+    margin-top: 120px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .title {
+    width: 80%;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 1.45rem;
+    letter-spacing: -0.1rem;
+}
+
+header .desc {
+    width: 60%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #9fabb2;
+    margin-top: 20px;
+}
+
+header .download {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+header .download button{
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.ios {
+    max-width: 400px;
+    background-color: #26baa4;
+    border-bottom: 3.5px solid #259d89 !important;
+    box-shadow: #26baa4 0px 5px 20px -10px;
+    transition: all 0.2s;
+}
+
+.ios:hover {
+    cursor: pointer;
+    background-color: #5dcbba;
+    border-bottom: 3.5px solid #56b5a5;
+    box-shadow: #259d89 0px 10px 20px -10px;
+    transform: scale(1.02, 1.02);
+}
+
+.mac {
+    max-width: 400px;
+    background-color: var(--LightBlue);
+    border-bottom: 3.5px solid hsla(240, 100%, 50%, 0.3) !important;
+    box-shadow: 0px 5px 20px -6px var(--LightBlue);
+    transition: all 0.2s;
+}
+
+.mac:hover {    
+    cursor: pointer;
+    background-color: #8795ff;
+    border-bottom: 3.5px solid #56b5a5;
+    box-shadow: #5063da 0px 10px 20px -10px;
+    transform: scale(1.02, 1.02);
+}
+
+/* Main section css */
+
+
+main .snippet {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-inline: auto;
+}
+
+.snippet h1 {
+    font-size: 2.2rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.snippet p {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #9fabb2;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.imac-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.imac {
+    width: 55%;
+}
+
+
+.imac img {
+    width: 95%;
+    position: relative;
+    right: 0;
+    left: -31px;
+}
+
+.features {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 40px 0 40px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature h2 {
+    color: var(--DarkGrayishBlue);
+}
+
+.feature p {
+    color: #9fabb2;
+    line-height: 30px;
+}
