@@ -272,6 +272,7 @@ footer {
 }
 
 .link a{
+    color: #4c545d;
     font-size: 1.1rem;
     display: block;
     text-decoration: none;
