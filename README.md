@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click-Here!](https://github.com/BS-Joy/fm-Clipboard-landing-page)
-- Live Site URL: [Click-Here!](https://your-live-site-url.com)
+- Live Site URL: [Click-Here!](https://bs-joy.github.io/fm-Clipboard-landing-page/)
 
 ### Built with
 
