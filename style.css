@@ -13,156 +13,486 @@
     --GrayishBlue: hsl(201, 11%, 66%);
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Bai Jamjuree', sans-serif;
-    background-image: url(images/bg-header-desktop.png);
+    background-image: url(images/bg-header-mobile.png);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    color: #4c545d;
+}
+
+p {
+    color: #9fabb2;
 }
 
 /* Header Css */
 
 header {
-    margin-top: 120px;
-    width: 70vw;
+    min-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.desc {
+    margin-inline: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 8rem 0 4rem 0;
+}
+
+.title,
+.top-desc {
+    padding-inline: 2rem;
+}
+
+.top-desc {
+    margin: 1.5rem auto 3rem;
+}
+
+.download {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.4rem;
+    margin-bottom: 10rem;
 }
 
-header .title {
-    width: 80%;
-    margin-top: 50px;
-    text-align: center;
-    color: var(--DarkGrayishBlue);
-    font-size: 1.45rem;
-    letter-spacing: -0.1rem;
-}
-
-header .desc {
-    width: 60%;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #9fabb2;
-    margin-top: 20px;
-}
-
-header .download {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-}
-
-header .download button{
-    color: white;
+.btn {
     font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 15px 30px;
-    border-radius: 30px;
-    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 4rem;
     border: none;
+    border-radius: 30px;
+    
 }
+
 
 .ios {
-    max-width: 400px;
-    background-color: #26baa4;
-    border-bottom: 3.5px solid #259d89 !important;
-    box-shadow: #26baa4 0px 5px 20px -10px;
+    background-color: var(--StrongCyan);
+    border-bottom: 3px solid #259d89;
+    box-shadow: 0px 5px 30px -10px #26baa4;
     transition: all 0.2s;
 }
 
 .ios:hover {
     cursor: pointer;
     background-color: #5dcbba;
-    border-bottom: 3.5px solid #56b5a5;
-    box-shadow: #259d89 0px 10px 20px -10px;
-    transform: scale(1.02, 1.02);
+    box-shadow: 0px 5px 20px -10px #26baa4;
+    transform: scale(1.025);
 }
 
 .mac {
-    max-width: 400px;
     background-color: var(--LightBlue);
-    border-bottom: 3.5px solid hsla(240, 100%, 50%, 0.3) !important;
-    box-shadow: 0px 5px 20px -6px var(--LightBlue);
+    border-bottom: 3px solid #5063da;
+    box-shadow: 0px 5px 30px -10px #6173ff;
     transition: all 0.2s;
 }
 
-.mac:hover {    
+.mac:hover {
     cursor: pointer;
-    background-color: #8795ff;
-    border-bottom: 3.5px solid #56b5a5;
-    box-shadow: #5063da 0px 10px 20px -10px;
-    transform: scale(1.02, 1.02);
+    background-color: #6173ff;
+    box-shadow: 0px 5px 20px -10px #5063da;
+    transform: scale(1.025);
 }
 
-/* Main section css */
-
-
-main .snippet {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-    margin-inline: auto;
+main {
+    width: 100%;
 }
 
-.snippet h1 {
-    font-size: 2.2rem;
-    color: var(--DarkGrayishBlue);
+.snippet h2,
+.snippet p {
+    padding-inline: 1.9rem;
+}
+
+.snippet h2 {
+    font-size: 1.8rem;
 }
 
 .snippet p {
-    width: 60%;
-    font-size: 1.2rem;
-    color: #9fabb2;
-    margin-top: 25px;
-    margin-bottom: 100px;
+    margin: 1.5rem auto;
+}
+
+.imac-container .imac {
+    width: 100%;
+}
+
+.imac img {
+    display: block;
+    max-width: 100%;
+    margin-inline: auto;
 }
 
 .imac-container {
+    margin: 5rem auto 8rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+}
+
+.feature h3{
+    font-size: 1.45rem;
+    letter-spacing: 0.1px;
+}
+
+.feature p{
+    margin-top: 0.55rem;
+    line-height: 1.6rem;
+    padding: 0 0.1rem;
+}
+
+.icloud {
+    margin: 3rem auto 3rem;
+}
+
+.access {
+    padding-inline: 2rem;
+}
+
+.access h2 {
+    font-size: 1.69rem;
+    line-height: 2.1rem;
+}
+
+.access p {
+    margin: 1.2rem auto 3rem;
+}
+
+.devices {
+    padding: 0.899rem 1rem 5.2rem;
+}
+
+.devices img{
+    display: block;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.supercharge {
+    padding-inline: 2rem;
+}
+
+.supercharge h2 {
+    font-size: 1.69rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+}
+
+.supercharge p {
+    margin: 1.3rem auto 0;
+}
+
+.services {
+    margin: 5.5rem auto 8rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.service img {
+    margin: 0 auto 2rem;
+}
+
+.service h3{
+    font-size: 1.49rem;
+}
+
+.service p {
+    margin-top: 1rem;
+    line-height: 1.62;
+}
+
+.partners {
+    margin: 9rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.clipboard h2 {
+    padding-inline: 3rem;
+    font-size: 1.7rem;
+    line-height: 1.25;
+}
+
+.clipboard p {
+    letter-spacing: -0.1px;
+    padding-inline: 1.8rem;
+    margin: 1.3rem auto 3rem;
+}
+
+footer {
+    background-color: #F5F6F8;
     width: 100%;
-    display: flex;
-    margin-bottom: 100px;
 }
 
-.imac {
-    width: 55%;
+.footer-logo {
+    width: 100%;
 }
 
-
-.imac img {
-    width: 95%;
-    position: relative;
-    right: 0;
-    left: -31px;
+.footer-logo img {
+    display: table;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 3rem auto 0;
 }
 
-.features {
-    width: 30%;
+.links {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    padding: 60px 40px 0 40px;
+    align-items: center;
+    margin: 2.5rem auto;
 }
 
-.feature {
+.link a{
+    font-size: 1.1rem;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto 1.7rem;
+}
+
+.link a:hover {
+    color: var(--StrongCyan);
+}
+
+.social-links {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.feature h2 {
-    color: var(--DarkGrayishBlue);
+.social-links i {
+    color: #4c545d;
+    font-size: 1.8rem;
+    margin-block-end: 2rem;
 }
 
-.feature p {
-    color: #9fabb2;
-    line-height: 30px;
+.social-links i:hover {
+    color: var(--StrongCyan);
+}
+
+.attribution {
+    color: #259d89;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a {
+    color: #259d89;
+    text-decoration: none;
+    margin-left: 0.2rem;
+}
+
+.attribution a:hover {
+    color: var(--LightBlue);
+}
+
+@media (min-width: 520px) {
+    .desc {
+        width: 29rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .desc {
+        width: 35rem;
+    }
+
+    .feature p {
+        width: 28rem;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .download {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .logo img {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .top-desc {
+        font-size: 1.3rem;
+        width: 48rem;
+        margin: 1rem auto 3rem;
+    }
+
+    .download {
+        gap: 1.1rem;
+    }
+
+    .btn {
+        padding: 1rem 3rem;
+    }
+
+    .snippet h2 {
+        font-size: 2.2rem;
+    }
+
+    .snippet p {
+        font-size: 1.2rem;
+        width: 50rem;
+    }
+
+    .access h2{
+        font-size: 2.22rem;
+    }
+
+    .access p {
+        width: 44rem;
+    }
+
+    .supercharge h2 {
+        font-size: 2.22rem;
+    }
+
+    .services {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .service {
+        width: calc(30% - 1.5rem);
+    }
+
+    .service p {
+        width: 100%;
+    }
+
+    .partners {
+        flex-direction: row;
+        gap: 2.2rem;
+        justify-content: center;
+    }
+
+    .clipboard h2 {
+        font-size: 2.22rem;
+    }
+
+    .clipboard p {
+        width: 50rem;
+    }
+
+    .footer-container {
+        margin: 3rem auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        margin: 0;
+    }
+
+    .links {
+        width: 40%;
+        margin: 0;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .link {
+        text-align: left;
+    }
+
+    .guide {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .social-links {
+        width: 30%;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1180px) {
+    .imac-container {
+        width: 100%;
+        flex-direction: row;
+        margin: 9rem auto 25rem;
+        padding: 0;
+        gap: 0;
+    }
+
+    .imac {
+        position: relative;
+        width: 50%;
+    }
+
+    .imac img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: -2.5vw;
+        transform: scale(1.05);
+    }
+
+    .features {
+        width: 50%;
+        padding: 2rem 15rem 0 8rem;
+    }
+
+    .feature h3,
+    .feature p {
+        text-align: left;
+    }
+
+    .feature p {
+        width: 25rem;
+    }
+
+    .partners {
+        gap: 7rem;
+    }
 }
